@@ -1,93 +1,110 @@
 * {
-    margin: 0;
-    padding: 0;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: none;
+  border: none; */
+  /* text-decoration: none; */
 }
 
-html{
-    font-family: 'Bebas Neue', cursive;
+html {
+  font-family: "Roboto", sans-serif;
 }
 
-
-.container{
-    max-width: 500px;
-    margin: 0 auto;
-    background: red;
-    height: 100vh;
-    background-image: url("pic2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-
+.container {
+  /* max-width: 500px; */
+  /* margin: 0 auto; */
+  /* background: red; */
+  /* height: 100vh; */
+  background: url("img/unifi-do-4.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  min-height: 100vh;
 }
 
 .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.profile>img {
-    width: 150px;
-    height: 150px;
-    border: 3px solid black;
-    border-radius: 100%;
-
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
+.profile > img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #374bff;
+  border-radius: 80%;
+  /* 
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%; */
 }
 
-.profile>p {
-    font-size: 1.8em;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: #fff;
-    text-transform: capitalize;
-    text-align: center;
-
-
+.profile > p {
+  margin-top: 1rem;
+  font-size: 28px;
+  text-shadow: 0 0 3px black;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  /* text-transform: capitalize; */
+  text-align: center;
 }
 
-
-.link{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-
-
+.link {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.link>a{
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-    text-align: center;
-    border: 3px solid black;
-    background-color: #fff;
-    border-radius: 7px;
-    margin: 5px 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: 500;
-    
-
+.link > a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px 10px;
+  padding: 10px;
+  /* text-transform: uppercase; */
+  font-weight: 700;
 }
 
-.link>a:hover{
-    background-color: azure;
-
+.link > a:hover {
+  /* background-color: azure; */
+  color: rgb(255, 166, 0);
 }
 
-.footer{
-    text-align: center;
+.footer {
+  text-align: center;
 }
 
-.footer>i{
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
+.footer > i {
+  color: #fff;
+  font-weight: 100;
+  font-size: 10px;
+}
+
+.footer span {
+  color: black;
+  font-weight: 700;
+}
+
+/* media queries */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 }
